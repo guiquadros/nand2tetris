@@ -1,0 +1,9 @@
+|   a   |   b   |  sel  |  out  |
+|   0   |   0   |   0   |   0   |
+|   0   |   0   |   1   |   0   |
+|   0   |   1   |   0   |   0   |
+|   0   |   1   |   1   |   1   | --> (NOT(a) AND b AND sel)
+|   1   |   0   |   0   |   1   | --> OR (a AND NOT(b) AND NOT(sel))
+|   1   |   0   |   1   |   0   |
+|   1   |   1   |   0   |   1   | --> OR (a AND b AND NOT(sel)
+|   1   |   1   |   1   |   1   | --> OR (a AND b AND sel)
